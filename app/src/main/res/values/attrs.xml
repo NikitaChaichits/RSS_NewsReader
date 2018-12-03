@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Use attr references to set resources depending of the theme selected -->
+
+<resources>
+
+    <attr name="ripple_color" format="color" />
+
+    <attr name="webview_icon" format="reference" />
+    <attr name="plus_icon" format="reference" />
+    <attr name="back_icon" format="reference" />
+    <attr name="share_icon" format="reference" />
+</resources>

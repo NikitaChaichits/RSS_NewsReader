@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the layout for Articles using text view -->
+
+<!-- Scrollview -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/article_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:maxLines="10"
+            android:textSize="30sp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="?android:attr/listDivider" />
+
+        <!-- Article's image -->
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/desc" />
+
+        <!-- Article TextView -->
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/webv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="@dimen/txtSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider" />
+
+        <!-- Action buttons (Read more..., Share, Go back) -->
+        <include layout="@layout/action_buttons" />
+
+    </LinearLayout>
+
+</ScrollView>

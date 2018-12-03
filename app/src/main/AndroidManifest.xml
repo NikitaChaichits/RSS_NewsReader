@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iven.feedreader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Base.Theme"
+        tools:replace="android:allowBackup, android:icon">
+
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:value="598.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H"
+            android:value="598.0dip" />
+
+        <activity
+            android:name="com.iven.feedreader.mainact.SplashActivity"
+            android:theme="@style/TranslucentSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.iven.feedreader.mainact.ListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme" />
+
+        <activity
+            android:name="com.iven.feedreader.mainact.ArticleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme" />
+
+        <activity
+            android:name="com.iven.feedreader.infoact.InfoActivity"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme" />
+
+        <activity
+            android:name="com.iven.feedreader.mainact.ArticlePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme" />
+
+        <service
+            android:name="com.iven.feedreader.utils.notifyService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.iven.feedreader.utils.broadcastReceiver"
+            android:enabled="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="dontKillMe" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

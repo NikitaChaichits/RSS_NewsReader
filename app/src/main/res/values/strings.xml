@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Strings -->
+
+<resources>
+    <string name="app_name" translatable="false">News Reader</string>
+    <string name="desc" translatable="false">placeholder</string>
+    <string name="more" translatable="false">Info</string>
+    <string name="error">Install a browser</string>
+    <string name="share">Share</string>
+    <string name="chooser_title">Choose your browser &#8230;</string>
+    <string name="no_internet">Connect to the internet please</string>
+    <string name="loading">Please wait &#8230;</string>
+
+    <!-- Preferences -->
+
+    <!-- Titles & summaries -->
+    <string name="opts">Theme options</string>
+    <string name="aboutopts" translatable="false">About</string>
+    <string name="moreopts">Other options</string>
+    <string name="settings">Options</string>
+    <string name="changelog" translatable="false">Changelog</string>
+    <string name="premarshmallow">Option not available on pre-Marshmallow devices</string>
+    <string name="pref_notify">Notifications</string>
+
+    <!-- Theme options -->
+    <string name="pref_theme_title">App theme</string>
+    <string name="themesum">The app needs to be restarted</string>
+    <string name="pref_theme" translatable="false">pref_theme</string>
+    <string name="pref_theme_list" translatable="false">pref_theme_list</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="darkest_theme">Darker</string>
+
+    <string name="red">Red</string>
+    <string name="pink">Pink</string>
+    <string name="purple">Purple</string>
+    <string name="deepPurple">Deep purple</string>
+    <string name="indigo">Indigo</string>
+    <string name="blue">Blue</string>
+    <string name="lightBlue">Light blue</string>
+    <string name="cyan">Cyan</string>
+    <string name="teal">Teal</string>
+    <string name="green">Green</string>
+    <string name="lightGreen">Light green</string>
+    <string name="lime">Lime</string>
+    <string name="yellow">Yellow</string>
+    <string name="amber">Amber</string>
+    <string name="orange">Orange</string>
+    <string name="deepOrange">Deep orange</string>
+    <string name="brown">Brown</string>
+    <string name="blueGrey">Blue grey</string>
+    <string name="red_dark">Red night</string>
+    <string name="pink_dark">Pink night</string>
+    <string name="purple_dark">Purple night</string>
+    <string name="deepPurple_dark">Deep purple night</string>
+    <string name="indigo_dark">Indigo night</string>
+    <string name="blue_dark">Blue night</string>
+    <string name="lightBlue_dark">Light blue night</string>
+    <string name="cyan_dark">Cyan night</string>
+    <string name="teal_dark">Teal night</string>
+    <string name="green_dark">Green night</string>
+    <string name="lightGreen_dark">Light green night</string>
+    <string name="lime_dark">Lime night</string>
+    <string name="yellow_dark">Yellow night</string>
+    <string name="amber_dark">Amber night</string>
+    <string name="orange_dark">Orange night</string>
+    <string name="deepOrange_dark">Deep orange night</string>
+    <string name="brown_dark">Brown night</string>
+    <string name="blueGrey_dark">Blue grey night</string>
+
+    <!-- Dark status icons mode -->
+    <string name="light_mode">Dark status icons</string>
+    <string name="light_mode_sum">Enable dark colored status bar icons</string>
+
+    <!-- Navigation bar tint -->
+    <string name="nav_color">Enable navbar tint</string>
+    <string name="nav_color_sum">This will enable navigation bar tinting</string>
+
+    <!-- Immersive mode -->
+    <string name="immersive_mode">Immersive mode</string>
+    <string name="immersive_mode_sum">Enable immersive mode on article\'s activity</string>
+
+    <!-- No images -->
+    <string name="no_images">Disable images</string>
+    <string name="no_images_sum">Disable article\'s images visualisation</string>
+
+    <!-- WebView -->
+    <string name="Reading">Use webview</string>
+    <string name="Readingsum">Read more using in-app webview</string>
+    <string name="JS_script_on">Enable JavaScript</string>
+
+    <!-- Text size options -->
+    <string name="pref_text_size" translatable="false">pref_text_size</string>
+    <string name="pref_text_size_list" translatable="false">pref_text_size_list</string>
+    <string name="pref_text_size_title">Adjust articles font</string>
+    <string name="pref_text_size_list_title">Adjust items font</string>
+    <string name="pref_text_size_summary">Choose default text size on articles</string>
+    <string name="pref_text_size_list_summary">Choose default text size of the home items</string>
+    <string name="pref_text_verysmall">Very small</string>
+    <string name="pref_text_small">Small</string>
+    <string name="pref_text_medium">Medium</string>
+    <string name="pref_text_large">Large</string>
+    <string name="pref_text_verylarge">Very large</string>
+
+    <!-- Clear cache -->
+    <string name="clear_cache">Clear app cache</string>
+    <string name="clear_cache_sum">This option will clean the app cache and reset the options</string>
+
+    <!-- Custom feeds -->
+    <string name="deletedialogtitle">Discard feed</string>
+    <string name="deletedialogquestion">Do you want to discard</string>
+    <string name="adddialogtitle">Feed addition</string>
+    <string name="feedmenu">Add a feed</string>
+    <string name="url_name">Url here</string>
+    <string name="title_name">Name here</string>
+    <string name="adddialogfeed">Insert your custom feed in RSS format</string>
+
+    <!-- Notification options -->
+    <string name="pref_time" translatable="false">pref_time</string>
+    <string name="pref_time_title">Choose check interval</string>
+    <string name="pref_time_summary">Choose the time between every check</string>
+    <string name="sound">Notification sound</string>
+    <string name="sound_summary">Change notification sound</string>
+
+    <string name="news">New articles posted :D</string>
+    <string name="notify">Enable notifications</string>
+    <string name="notify_summary">Get a notification when new articles are posted</string>
+
+    <string name="pref_time_0">15 seconds</string>
+    <string name="pref_time_default">30 seconds</string>
+    <string name="pref_time_1">1 minute</string>
+    <string name="pref_time_2">5 minutes</string>
+    <string name="pref_time_3">10 minutes</string>
+    <string name="pref_time_4">20 minutes</string>
+    <string name="pref_time_5">30 minutes</string>
+    <string name="pref_time_6">1 hour</string>
+
+</resources>

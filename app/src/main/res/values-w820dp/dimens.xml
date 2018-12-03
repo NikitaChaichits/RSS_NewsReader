@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Dimensions for devices sizes > 820dp (tablets) -->
+
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="txtSize">24sp</dimen>
+</resources>

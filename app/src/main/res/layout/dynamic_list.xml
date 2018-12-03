@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The layout for the dynamic RecyclerView -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_frame"
+    android:layout_width="290dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="?attr/colorPrimary"
+    android:clickable="true"
+    android:fitsSystemWindows="true">
+
+    <!-- The dynamic RecyclerView -->
+    <include layout="@layout/recycler_view_dynamic" />
+
+</FrameLayout>

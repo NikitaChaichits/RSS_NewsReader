@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Preferences -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preference_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory android:title="@string/pref_notify" />
+
+    <!-- Notifications -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="notifications"
+        android:summary="@string/notify_summary"
+        android:title="@string/notify" />
+
+    <!-- check interval -->
+    <ListPreference
+        android:defaultValue="47"
+        android:entries="@array/time_list_options"
+        android:entryValues="@array/pref_time_values"
+        android:key="@string/pref_time"
+        android:summary="@string/pref_time_summary"
+        android:title="@string/pref_time_title" />
+
+    <!-- ringtone -->
+    <RingtonePreference
+        android:key="audio"
+        android:ringtoneType="notification"
+        android:showDefault="true"
+        android:summary="@string/sound_summary"
+        android:title="@string/sound" />
+
+    <PreferenceCategory android:title="@string/opts" />
+
+    <!-- Theme -->
+    <ListPreference
+        android:defaultValue="8"
+        android:entries="@array/theme_options"
+        android:entryValues="@array/pref_theme_list_values"
+        android:key="@string/pref_theme"
+        android:summary="@string/themesum"
+        android:title="@string/pref_theme_title" />
+
+    <!-- Dark status bar icons -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="lightcolored"
+        android:summary="@string/light_mode_sum"
+        android:title="@string/light_mode" />
+
+    <!-- Navigation bar tint -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="Navibar"
+        android:summary="@string/nav_color_sum"
+        android:title="@string/nav_color" />
+
+    <!-- Immersive mode -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="Immerseme"
+        android:summary="@string/immersive_mode_sum"
+        android:title="@string/immersive_mode" />
+
+    <PreferenceCategory android:title="@string/moreopts" />
+
+    <!-- Disable images -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="images"
+        android:summary="@string/no_images_sum"
+        android:title="@string/no_images" />
+
+    <!-- WebView -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="WebViewLoad"
+        android:summary="@string/Readingsum"
+        android:title="@string/Reading" />
+
+    <!-- TextSize options -->
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/text_size_options"
+        android:entryValues="@array/pref_text_size_values"
+        android:key="@string/pref_text_size"
+        android:summary="@string/pref_text_size_summary"
+        android:title="@string/pref_text_size_title" />
+
+    <ListPreference
+        android:defaultValue="6"
+        android:entries="@array/text_size_list_options"
+        android:entryValues="@array/pref_text_size_list_values"
+        android:key="@string/pref_text_size_list"
+        android:summary="@string/pref_text_size_list_summary"
+        android:title="@string/pref_text_size_list_title" />
+
+    <!-- Clear cache -->
+    <Preference
+        android:key="clearcache"
+        android:summary="@string/clear_cache_sum"
+        android:title="@string/clear_cache" />
+
+</PreferenceScreen>

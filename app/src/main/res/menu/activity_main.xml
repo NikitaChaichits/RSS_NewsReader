@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the toolbar menu on main activity -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+
+    <!-- Settings -->
+    <item
+        android:id="@+id/option"
+        android:orderInCategory="200"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+    <!-- Add feed -->
+    <item
+        android:id="@+id/addfeed"
+        android:icon="?attr/plus_icon"
+        android:title="@string/feedmenu"
+        android:visible="false"
+        app:showAsAction="always" />
+
+</menu>

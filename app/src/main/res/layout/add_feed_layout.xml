@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the layout for the add feeds dialog -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="8dp">
+
+    <!-- Message -->
+    <TextView
+        android:id="@android:id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/adddialogfeed"
+        android:textSize="16sp"
+        tools:ignore="UnusedAttribute"
+        tools:text="Message" />
+
+    <!-- Url -->
+    <EditText
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/url_name"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textSize="16sp"
+        tools:ignore="UnusedAttribute" />
+
+    <!-- Title -->
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/title_name"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textSize="16sp"
+        tools:ignore="UnusedAttribute" />
+
+</LinearLayout>
